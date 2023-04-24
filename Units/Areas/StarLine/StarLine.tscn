@@ -1,0 +1,5 @@
+[gd_scene format=2]
+
+[node name="StarLine" type="CollisionPolygon2D"]
+position = Vector2( 32, 32 )
+polygon = PoolVector2Array( 32, -808, -32, -808, -32, -24, -1088, -24, -1088, 24, -32, 24, -800, 688, -760, 736, 0, 72, 760, 736, 792, 704, 32, 24, 1152, 24, 1152, -24, 32, -24 )

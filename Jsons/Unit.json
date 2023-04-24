@@ -1,0 +1,155 @@
+{
+	"index": 9,
+	"Units": [{
+			"id"        : 0 ,
+			"name"      : "基础发射器" ,
+			"CD"        : 3 ,
+			"BLOCK"     : 2 ,
+			"DF"        : 20 ,
+			"HP"        : 200 ,
+			"DM"        : 60 ,
+			"cost"      : 50 ,
+			"ATT"       : 1.0 ,
+			"functions" : ["NormalShooter"] ,
+			"area"      : "NormalLine" ,
+			"args"      : {
+				"NormalShooter" : ["NormalBullet"]
+			},
+			"texture"   : "res://icon.png"
+		},
+		{
+			"id"        : 1 ,
+			"name"      : "速用发射器" ,
+			"CD"        : 2 ,
+			"BLOCK"     : 2 ,
+			"DF"        : 0 ,
+			"HP"        : 100 ,
+			"DM"        : 25 ,
+			"cost"      : 15 ,
+			"ATT"       : 1.75 ,
+			"functions" : ["NormalShooter"] ,
+			"area"      : "NormalLine" ,
+			"args"      : {
+				"NormalShooter" : ["NormalBullet"]
+			},
+			"texture"   : "res://Resource/BLODD.png"
+		},
+		{
+			"id"        : 2 ,
+			"name"      : "能量生产器" ,
+			"CD"        : 3 ,
+			"BLOCK"     : 1 ,
+			"DF"        : 0 ,
+			"HP"        : 200 ,
+			"DM"        : 0 ,
+			"cost"      : 50 ,
+			"ATT"       : 0 ,
+			"functions" : ["Energy"] ,
+			"area"      : "" ,
+			"args"      : {
+				"Energy" : [1.5]
+			},
+			"texture"   : "res://Resource/POWER.png"
+		},
+		{
+			"id"        : 3 ,
+			"name"      : "屏障" ,
+			"CD"        : 5 ,
+			"BLOCK"     : 5 ,
+			"DF"        : 200 ,
+			"HP"        : 750 ,
+			"DM"        : 0 ,
+			"cost"      : 50 ,
+			"ATT"       : 0 ,
+			"functions" : [] ,
+			"area"      : "" ,
+			"args"      : {} ,
+			"texture"   : "res://Resource/COOL.png"
+		},
+		{
+			"id"        : 4 ,
+			"name"      : "炸药",
+			"CD"        : 8,
+			"BLOCK"     : 0,
+			"DF"        : 0,
+			"HP"        : 120,
+			"DM"        : 1250,
+			"cost"      : 75,
+			"ATT"       : 4,
+			"functions" : ["NormalBomb"],
+			"area"      : "Normal3-3",
+			"args"      : {
+				"NormalBomb": [0]
+			},
+			"texture"   : "res://Resource/BOMB.png"
+		},
+		{
+			"id"        : 5 ,
+			"name"      : "穿透箭头",
+			"CD"        : 3,
+			"BLOCK"     : 2,
+			"DF"        : 20,
+			"HP"        : 200,
+			"DM"        : 30,
+			"cost"      : 125,
+			"ATT"       : 2.0,
+			"functions" : ["NormalShooter"],
+			"area"      : "NormalLine",
+			"args"      : {
+				"NormalShooter": ["ArrowBullet"]
+			},
+			"texture"   : "res://Resource/ARROW.png"
+		},
+		{
+			"id"        : 6 ,
+			"name"      : "野战炮",
+			"CD"        : 5,
+			"BLOCK"     : 2,
+			"DF"        : 40,
+			"HP"        : 350,
+			"DM"        : 80,
+			"cost"      : 175,
+			"ATT"       : 5,
+			"functions" : ["NormalShooter"],
+			"area"      : "NormalLine",
+			"args"      : {
+				"NormalShooter": ["ShellBullet"]
+			},
+			"texture"   : "res://Resource/CANNON.png"
+		},
+		{
+			"id"        : 7 ,
+			"name"      : "EMP炸弹",
+			"CD"        : 7,
+			"BLOCK"     : 0,
+			"DF"        : 0,
+			"HP"        : 120,
+			"DM"        : 0,
+			"cost"      : 50,
+			"ATT"       : 0,
+			"functions" : ["EMPBomb"],
+			"area"      : "Normal3-3",
+			"args"      : {
+				"EMPBomb": [2]
+			},
+			"texture"   : "res://Resource/ZOMbie.png"
+		},
+		{
+			"id"        : 8 ,
+			"name"      : "星星",
+			"CD"        : 3,
+			"BLOCK"     : 2,
+			"DF"        : 20,
+			"HP"        : 200,
+			"DM"        : 60,
+			"cost"      : 75,
+			"ATT"       : 3,
+			"functions" : ["StarShooter"],
+			"area"      : "StarLine",
+			"args"      : {
+				"StarShooter": ["NormalBullet"]
+			},
+			"texture"   : "res://Resource/1437.png"
+		}
+	]
+}

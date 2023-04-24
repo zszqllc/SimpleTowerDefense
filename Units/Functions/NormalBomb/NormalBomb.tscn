@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Units/Functions/NormalBomb/NormalBomb.gd" type="Script" id=1]
+
+[node name="NormalBomb" type="Node"]
+script = ExtResource( 1 )
+
+[node name="BombTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="BombTimer" to="." method="_on_BombTimer_timeout"]

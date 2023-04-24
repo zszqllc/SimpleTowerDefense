@@ -1,0 +1,707 @@
+[gd_scene load_steps=21 format=3 uid="uid://ff2xmty1nq8j"]
+
+[ext_resource type="Script" path="res://levels/Slot.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://b8s84bo5mfxfc" path="res://Resource/Tiles/tilesheet_complete.png" id="2"]
+
+[sub_resource type="Curve2D" id="13"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -128, 160, 0, 0, 0, 0, 288, 160, 0, 0, 0, 0, 288, 224, 0, 0, 0, 0, 352, 224, 0, 0, 0, 0, 352, 288, 0, 0, 0, 0, 480, 288, 0, 0, 0, 0, 480, 224, 0, 0, 0, 0, 672, 224, 0, 0, 0, 0, 672, 160, 0, 0, 0, 0, 1152, 160)
+}
+point_count = 10
+
+[sub_resource type="Curve2D" id="14"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -128, 224, 0, 0, 0, 0, 352, 224, 0, 0, 0, 0, 352, 288, 0, 0, 0, 0, 480, 288, 0, 0, 0, 0, 480, 224, 0, 0, 0, 0, 1152, 224)
+}
+point_count = 6
+
+[sub_resource type="Curve2D" id="3"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -128, 288, 0, 0, 0, 0, 1152, 288)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="4"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -128, 352, 0, 0, 0, 0, 1152, 352)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="15"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -128, 416, 0, 0, 0, 0, 352, 416, 0, 0, 0, 0, 352, 352, 0, 0, 0, 0, 480, 352, 0, 0, 0, 0, 480, 416, 0, 0, 0, 0, 1152, 416)
+}
+point_count = 6
+
+[sub_resource type="Curve2D" id="16"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -128, 480, 0, 0, 0, 0, 288, 480, 0, 0, 0, 0, 288, 416, 0, 0, 0, 0, 352, 416, 0, 0, 0, 0, 352, 352, 0, 0, 0, 0, 480, 352, 0, 0, 0, 0, 480, 416, 0, 0, 0, 0, 672, 416, 0, 0, 0, 0, 672, 480, 0, 0, 0, 0, 1152, 480)
+}
+point_count = 10
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_txqob"]
+texture = ExtResource("2")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vrpa4"]
+texture = ExtResource("2")
+texture_region_size = Vector2i(64, 64)
+0:0/next_alternative_id = 8
+0:0/0 = 0
+0:0/1 = 1
+0:0/1/flip_h = true
+0:0/2 = 2
+0:0/2/flip_v = true
+0:0/3 = 3
+0:0/3/flip_h = true
+0:0/3/flip_v = true
+0:0/4 = 4
+0:0/4/transpose = true
+0:0/5 = 5
+0:0/5/flip_h = true
+0:0/5/transpose = true
+0:0/6 = 6
+0:0/6/flip_v = true
+0:0/6/transpose = true
+0:0/7 = 7
+0:0/7/flip_h = true
+0:0/7/flip_v = true
+0:0/7/transpose = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_huctp"]
+texture = ExtResource("2")
+margins = Vector2i(0, 576)
+texture_region_size = Vector2i(64, 64)
+0:0/next_alternative_id = 8
+0:0/0 = 0
+0:0/1 = 1
+0:0/1/flip_h = true
+0:0/2 = 2
+0:0/2/flip_v = true
+0:0/3 = 3
+0:0/3/flip_h = true
+0:0/3/flip_v = true
+0:0/4 = 4
+0:0/4/transpose = true
+0:0/5 = 5
+0:0/5/flip_h = true
+0:0/5/transpose = true
+0:0/6 = 6
+0:0/6/flip_v = true
+0:0/6/transpose = true
+0:0/7 = 7
+0:0/7/flip_h = true
+0:0/7/flip_v = true
+0:0/7/transpose = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ghsop"]
+texture = ExtResource("2")
+margins = Vector2i(64, 0)
+texture_region_size = Vector2i(64, 64)
+0:0/next_alternative_id = 8
+0:0/0 = 0
+0:0/1 = 1
+0:0/1/flip_h = true
+0:0/2 = 2
+0:0/2/flip_v = true
+0:0/3 = 3
+0:0/3/flip_h = true
+0:0/3/flip_v = true
+0:0/4 = 4
+0:0/4/transpose = true
+0:0/5 = 5
+0:0/5/flip_h = true
+0:0/5/transpose = true
+0:0/6 = 6
+0:0/6/flip_v = true
+0:0/6/transpose = true
+0:0/7 = 7
+0:0/7/flip_h = true
+0:0/7/flip_v = true
+0:0/7/transpose = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2lsmj"]
+texture = ExtResource("2")
+margins = Vector2i(0, 64)
+texture_region_size = Vector2i(64, 64)
+0:0/next_alternative_id = 8
+0:0/0 = 0
+0:0/1 = 1
+0:0/1/flip_h = true
+0:0/2 = 2
+0:0/2/flip_v = true
+0:0/3 = 3
+0:0/3/flip_h = true
+0:0/3/flip_v = true
+0:0/4 = 4
+0:0/4/transpose = true
+0:0/5 = 5
+0:0/5/flip_h = true
+0:0/5/transpose = true
+0:0/6 = 6
+0:0/6/flip_v = true
+0:0/6/transpose = true
+0:0/7 = 7
+0:0/7/flip_h = true
+0:0/7/flip_v = true
+0:0/7/transpose = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pvkhe"]
+texture = ExtResource("2")
+margins = Vector2i(0, 256)
+texture_region_size = Vector2i(64, 64)
+0:0/next_alternative_id = 8
+0:0/0 = 0
+0:0/1 = 1
+0:0/1/flip_h = true
+0:0/2 = 2
+0:0/2/flip_v = true
+0:0/3 = 3
+0:0/3/flip_h = true
+0:0/3/flip_v = true
+0:0/4 = 4
+0:0/4/transpose = true
+0:0/5 = 5
+0:0/5/flip_h = true
+0:0/5/transpose = true
+0:0/6 = 6
+0:0/6/flip_v = true
+0:0/6/transpose = true
+0:0/7 = 7
+0:0/7/flip_h = true
+0:0/7/flip_v = true
+0:0/7/transpose = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8y5e1"]
+texture = ExtResource("2")
+margins = Vector2i(0, 192)
+texture_region_size = Vector2i(64, 64)
+0:0/next_alternative_id = 8
+0:0/0 = 0
+0:0/1 = 1
+0:0/1/flip_h = true
+0:0/2 = 2
+0:0/2/flip_v = true
+0:0/3 = 3
+0:0/3/flip_h = true
+0:0/3/flip_v = true
+0:0/4 = 4
+0:0/4/transpose = true
+0:0/5 = 5
+0:0/5/flip_h = true
+0:0/5/transpose = true
+0:0/6 = 6
+0:0/6/flip_v = true
+0:0/6/transpose = true
+0:0/7 = 7
+0:0/7/flip_h = true
+0:0/7/flip_v = true
+0:0/7/transpose = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gvnf2"]
+texture = ExtResource("2")
+margins = Vector2i(0, 320)
+texture_region_size = Vector2i(64, 64)
+0:0/next_alternative_id = 8
+0:0/0 = 0
+0:0/1 = 1
+0:0/1/flip_h = true
+0:0/2 = 2
+0:0/2/flip_v = true
+0:0/3 = 3
+0:0/3/flip_h = true
+0:0/3/flip_v = true
+0:0/4 = 4
+0:0/4/transpose = true
+0:0/5 = 5
+0:0/5/flip_h = true
+0:0/5/transpose = true
+0:0/6 = 6
+0:0/6/flip_v = true
+0:0/6/transpose = true
+0:0/7 = 7
+0:0/7/flip_h = true
+0:0/7/flip_v = true
+0:0/7/transpose = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u2543"]
+texture = ExtResource("2")
+margins = Vector2i(0, 128)
+texture_region_size = Vector2i(64, 64)
+0:0/next_alternative_id = 8
+0:0/0 = 0
+0:0/1 = 1
+0:0/1/flip_h = true
+0:0/2 = 2
+0:0/2/flip_v = true
+0:0/3 = 3
+0:0/3/flip_h = true
+0:0/3/flip_v = true
+0:0/4 = 4
+0:0/4/transpose = true
+0:0/5 = 5
+0:0/5/flip_h = true
+0:0/5/transpose = true
+0:0/6 = 6
+0:0/6/flip_v = true
+0:0/6/transpose = true
+0:0/7 = 7
+0:0/7/flip_h = true
+0:0/7/flip_v = true
+0:0/7/transpose = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_548vl"]
+texture = ExtResource("2")
+margins = Vector2i(0, 384)
+texture_region_size = Vector2i(64, 64)
+0:0/next_alternative_id = 8
+0:0/0 = 0
+0:0/1 = 1
+0:0/1/flip_h = true
+0:0/2 = 2
+0:0/2/flip_v = true
+0:0/3 = 3
+0:0/3/flip_h = true
+0:0/3/flip_v = true
+0:0/4 = 4
+0:0/4/transpose = true
+0:0/5 = 5
+0:0/5/flip_h = true
+0:0/5/transpose = true
+0:0/6 = 6
+0:0/6/flip_v = true
+0:0/6/transpose = true
+0:0/7 = 7
+0:0/7/flip_h = true
+0:0/7/flip_v = true
+0:0/7/transpose = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hcspi"]
+texture = ExtResource("2")
+margins = Vector2i(0, 512)
+texture_region_size = Vector2i(64, 64)
+0:0/next_alternative_id = 8
+0:0/0 = 0
+0:0/1 = 1
+0:0/1/flip_h = true
+0:0/2 = 2
+0:0/2/flip_v = true
+0:0/3 = 3
+0:0/3/flip_h = true
+0:0/3/flip_v = true
+0:0/4 = 4
+0:0/4/transpose = true
+0:0/5 = 5
+0:0/5/flip_h = true
+0:0/5/transpose = true
+0:0/6 = 6
+0:0/6/flip_v = true
+0:0/6/transpose = true
+0:0/7 = 7
+0:0/7/flip_h = true
+0:0/7/flip_v = true
+0:0/7/transpose = true
+
+[sub_resource type="TileSet" id="9"]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_txqob")
+sources/1 = SubResource("TileSetAtlasSource_vrpa4")
+sources/2 = SubResource("TileSetAtlasSource_ghsop")
+sources/3 = SubResource("TileSetAtlasSource_2lsmj")
+sources/4 = SubResource("TileSetAtlasSource_pvkhe")
+sources/5 = SubResource("TileSetAtlasSource_8y5e1")
+sources/6 = SubResource("TileSetAtlasSource_gvnf2")
+sources/7 = SubResource("TileSetAtlasSource_u2543")
+sources/8 = SubResource("TileSetAtlasSource_548vl")
+sources/9 = SubResource("TileSetAtlasSource_hcspi")
+sources/10 = SubResource("TileSetAtlasSource_huctp")
+
+[node name="Map2" type="Node2D"]
+position = Vector2(100, 200)
+
+[node name="Paths" type="Node2D" parent="."]
+position = Vector2(-132, -336)
+
+[node name="Path1" type="Path2D" parent="Paths"]
+position = Vector2(100, 200)
+curve = SubResource("13")
+
+[node name="Path2" type="Path2D" parent="Paths"]
+position = Vector2(100, 200)
+curve = SubResource("14")
+
+[node name="Path3" type="Path2D" parent="Paths"]
+position = Vector2(100, 200)
+curve = SubResource("3")
+
+[node name="Path4" type="Path2D" parent="Paths"]
+position = Vector2(100, 200)
+curve = SubResource("4")
+
+[node name="Path5" type="Path2D" parent="Paths"]
+position = Vector2(100, 200)
+curve = SubResource("15")
+
+[node name="Path6" type="Path2D" parent="Paths"]
+position = Vector2(100, 200)
+curve = SubResource("16")
+
+[node name="Slots" type="GridContainer" parent="."]
+z_index = -2
+custom_minimum_size = Vector2(64, 64)
+offset_left = -32.0
+offset_top = -8.0
+offset_right = 672.0
+offset_bottom = 376.0
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 11
+metadata/_edit_use_anchors_ = true
+
+[node name="Slot1-1" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot1-2" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot1-3" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot1-4" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot1-5" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot1-6" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+Disabled = true
+
+[node name="Slot1-7" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+Disabled = true
+
+[node name="Slot1-8" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+Disabled = true
+
+[node name="Slot1-9" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+Disabled = true
+
+[node name="Slot1-10" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+Disabled = true
+
+[node name="Slot1-11" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot2-1" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot2-2" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot2-3" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot2-4" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot2-5" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot2-6" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot2-7" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+Disabled = true
+
+[node name="Slot2-8" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot2-9" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot2-10" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot2-11" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot3-1" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot3-2" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot3-3" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot3-4" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot3-5" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot3-6" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot3-7" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot3-8" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot3-9" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot3-10" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot3-11" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot4-1" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot4-2" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot4-3" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot4-4" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot4-5" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot4-6" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot4-7" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot4-8" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot4-9" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot4-10" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot4-11" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot5-1" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot5-2" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot5-3" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot5-4" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot5-5" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot5-6" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot5-7" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+Disabled = true
+
+[node name="Slot5-8" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot5-9" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot5-10" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot5-11" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot6-1" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot6-2" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot6-3" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot6-4" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot6-5" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="Slot6-6" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+Disabled = true
+
+[node name="Slot6-7" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+Disabled = true
+
+[node name="Slot6-8" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+Disabled = true
+
+[node name="Slot6-9" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+Disabled = true
+
+[node name="Slot6-10" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+Disabled = true
+
+[node name="Slot6-11" type="PanelContainer" parent="Slots"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("1")
+
+[node name="TileMap" type="TileMap" parent="."]
+z_index = -1
+position = Vector2(-32, -136)
+tile_set = SubResource("9")
+format = 2
+layer_0/tile_data = PackedInt32Array(131072, 4, 0, 131073, 4, 0, 131074, 4, 0, 131075, 4, 0, 131076, 4, 0, 131077, 3, 0, 131078, 3, 0, 131079, 3, 0, 131080, 3, 0, 131081, 3, 0, 131082, 4, 0, 131083, 1, 0, 131084, 1, 0, 131085, 8, 0, 131086, 1, 0, 196608, 5, 0, 196609, 4, 0, 196610, 4, 0, 196611, 5, 0, 196612, 5, 0, 196613, 4, 0, 196614, 3, 0, 196615, 5, 0, 196616, 4, 0, 196617, 4, 0, 196618, 4, 0, 196619, 1, 0, 196620, 8, 0, 196621, 1, 0, 196622, 1, 0, 262144, 4, 0, 262145, 5, 0, 262146, 4, 0, 262147, 5, 0, 262148, 5, 0, 262149, 5, 0, 262150, 4, 0, 262151, 5, 0, 262152, 5, 0, 262153, 4, 0, 262154, 5, 0, 262155, 9, 0, 262156, 1, 0, 262157, 1, 0, 262158, 8, 0, 327680, 5, 0, 327681, 4, 0, 327682, 4, 0, 327683, 4, 0, 327684, 5, 0, 327685, 5, 0, 327686, 5, 0, 327687, 4, 0, 327688, 4, 0, 327689, 5, 0, 327690, 4, 0, 327691, 1, 0, 327692, 9, 0, 327693, 1, 0, 327694, 8, 0, 393216, 4, 0, 393217, 4, 0, 393218, 4, 0, 393219, 5, 0, 393220, 4, 0, 393221, 5, 0, 393222, 3, 0, 393223, 5, 0, 393224, 5, 0, 393225, 5, 0, 393226, 4, 0, 393227, 1, 0, 393228, 1, 0, 393229, 1, 0, 393230, 1, 0, 458752, 5, 0, 458753, 4, 0, 458754, 5, 0, 458755, 4, 0, 458756, 4, 0, 458757, 3, 0, 458758, 3, 0, 458759, 3, 0, 458760, 3, 0, 458761, 3, 0, 458762, 4, 0, 458763, 1, 0, 458764, 1, 0, 458765, 8, 0, 458766, 8, 0)

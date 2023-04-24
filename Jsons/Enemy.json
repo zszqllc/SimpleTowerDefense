@@ -1,0 +1,45 @@
+{   
+	"index" : 5 ,
+	"Enemies" : [
+		{	
+			"name"    : "普通姜丝" , 
+			"HP"      : 400 ,
+			"SPEED"   : 4 ,   
+			"DM"      : 100 , 
+			"ATT"     : 1.0 ,
+			"texture" : "res://Resource/ZOMbie.png"   
+		},
+		{
+			"name"    : "巨人姜丝" , 
+			"HP"      : 1200 , 
+			"SPEED"   : 3 , 
+			"DM"      : 150 , 
+			"ATT"     : 2.0 , 
+			"texture" : "res://Resource/ZOMbut.png"   
+		},
+		{
+			"name"    : "屠夫姜丝" ,
+			"HP"      : 1000 ,
+			"SPEED"   : 3 ,
+			"DM"      : 250 ,
+			"ATT"     : 2.0 ,
+			"texture" : "res://Resource/GZOMbie.png"   
+		},
+		{
+			"name"    : "炸弹姜丝" ,
+			"HP"      : 75 ,
+			"SPEED"   : 8 ,
+			"DM"      : 1000 ,
+			"ATT"     : 1.0 ,
+			"texture" : "res://Resource/ZOMbob.png"  
+		},
+		{
+			"name"    : "疾跑姜丝" ,
+			"HP"      : 150 ,
+			"SPEED"   : 6 ,
+			"DM"      : 200 ,
+			"ATT"     : 1.0 ,
+			"texture" : "res://Resource/RZOMbie.png"  
+		}
+	]
+}

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4sosp5hbjxr7"]
+
+[ext_resource type="Script" path="res://levels/SettingMenu.gd" id="1_6xslk"]
+
+[node name="SettingMenu" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_6xslk")
+
+[node name="back" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(35.8235, 22.3767)
+color = Color(0, 0, 0, 0.247059)
